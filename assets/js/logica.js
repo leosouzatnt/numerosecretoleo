@@ -1,6 +1,6 @@
  //Variaveis
  let listaDeNumerosSorteados = []; //Lista para armazenar os números já sorteados e evitar repetições
- let numeroLimite = 10; //Definição do limite máximo para os números aleatórios
+ let numeroLimite = 20; //Definição do limite máximo para os números aleatórios
  let numeroSecreto = gerarNumeroAleatorio(); //Gera o primeiro número secreto ao iniciar o jogo
 
  /**
