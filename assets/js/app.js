@@ -1,7 +1,7 @@
 let listaDeNumerosSorteados = [];
 let numeroLimite = 20;
 let numeroSecreto = gerarNumeroAleatorio();
-let tentativas = 1;
+let tentativas = 3;
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
@@ -19,7 +19,7 @@ function verificarChute() {
         document.getElementById('reiniciar').removeAttribute('disabled');
         document.getElementById('chute').setAttribute('disabled', true)
 
-    } else if (tentativas == 2) {
+    } else if (tentativas == 3) {
         exibirTextoNaTela('h1', 'Errou! Número máximo de tentativas é 2');
         exibirTextoNaTela('p', 'O número secreto era: ' + numeroSecreto);
         document.getElementById('reiniciar').removeAttribute('disabled');
@@ -64,7 +64,8 @@ function reiniciarJogo() {
     tentativas = 1;
     exibirTextoNaTela('h1', 'Adivinhe o <span class="container__texto-azul">numero secreto</span>');
     exibirTextoNaTela('p', 'Escolha um número entre 1 a 10');
-    document.getElementById('reiniciar').setAttribute('disabled', true)
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+    document.getElementById('chute').removeAttribute('disabled');
 }
 
 
