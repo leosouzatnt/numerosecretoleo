@@ -74,8 +74,8 @@ function reiniciarJogo() {
     numeroSecreto = gerarNumeroAleatorio();
    
     tentativas = 1;
-    exibirTextoNaTela('h1', 'Adivinhe o <span class="container__texto-azul">Número secreto</span>');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 a 20');
+    exibirTextoNaTela('h1', 'Adivinhe o <span class="container__texto-red">Número secreto</span>');
+    exibirTextoNaTela('p', 'Escolha um número entre 0 a 20');
     document.getElementById('reiniciar').setAttribute('disabled', true);
     document.getElementById('chute').removeAttribute('disabled');
     limparCampo();
